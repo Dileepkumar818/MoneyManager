@@ -35,11 +35,13 @@ class MoneyManager extends Component {
 
   addTransaction = () => {
     const {amount, title, optionId} = this.state
+    const list = transactionTypeOptions.find(each => each.optionId === optionId)
+    const {displayText} = list
     const transactionObj = {
       total: parseInt(amount),
       id: v4(),
       head: title,
-      type: optionId,
+      type: displayText,
     }
 
     this.setState(prev => ({
@@ -59,7 +61,7 @@ class MoneyManager extends Component {
     let total = 0
 
     transactions.forEach(each => {
-      if (each.type === 'INCOME') {
+      if (each.type === 'Income') {
         total += each.total
       }
     })
@@ -72,7 +74,7 @@ class MoneyManager extends Component {
     let expense = 0
 
     transactions.forEach(each => {
-      if (each.type === 'EXPENSES') {
+      if (each.type === 'Expenses') {
         expense += each.total
       }
     })
@@ -86,7 +88,7 @@ class MoneyManager extends Component {
     let expense = 0
 
     transactions.forEach(each => {
-      if (each.type === 'INCOME') {
+      if (each.type === 'Income') {
         total += each.total
       } else {
         expense += each.total

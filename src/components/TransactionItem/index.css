@@ -1,0 +1,29 @@
+/* Write your CSS here */
+.list {
+  list-style-type: none;
+  display: flex;
+  border-style: outset;
+  width: 300px;
+}
+
+.title-para {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.amount-para {
+  margin-right: 10px;
+}
+
+.type-para {
+  margin-right: 10px;
+}
+
+img {
+  width: 100px;
+}
+
+.button {
+  background-color: transparent;
+  border-style: none;
+}

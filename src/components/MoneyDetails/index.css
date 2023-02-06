@@ -1,0 +1,42 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 50px;
+}
+
+.balance-container {
+  display: flex;
+  border-style: outset;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ecfccb;
+  border-color: #84cc16;
+  border-width: 1px;
+}
+
+.income-container {
+  display: flex;
+  border-style: outset;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #cffafe;
+  border-color: #06b6d4;
+  border-width: 1px;
+}
+
+.expenses-container {
+  display: flex;
+  border-style: outset;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ede9fe;
+  border-color: #7c3aed;
+  border-width: 1px;
+}

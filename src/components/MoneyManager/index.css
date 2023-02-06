@@ -1,0 +1,58 @@
+/* Write your CSS here */
+.bg-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.title-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 10px;
+}
+
+.transactions-container {
+  display: flex;
+  margin: 30px;
+}
+
+.transactions-input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  border-style: outset;
+  border-width: 1px;
+}
+
+.money-details {
+  display: flex;
+}
+
+.title-para {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.amount-para {
+  margin-right: 10px;
+}
+
+.input {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.type-para {
+  margin-right: 10px;
+}
